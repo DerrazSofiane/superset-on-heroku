@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:$PORT superset:app
+web: flask run -p $PORT --with-threads --reload --debugger --host=0.0.0.0
