@@ -4,3 +4,8 @@ psycopg2
 werkzeug
 email_validator
 sqlalchemy-vertica
+gevent
+gunicorn
+pandas
+sqlalchemy
+mysql-connector-python

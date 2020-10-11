@@ -1,5 +1,9 @@
 {
   "name": "Superset on Heroku",
+  "keywords": [
+    "superset",
+    "business intelligence"
+  ],
   "description": "Data exploration platform designed to be visual, intuitive, and interactive",
   "logo": "https://github.com/apache/incubator-superset/blob/master/superset-frontend/branding/superset-logo-stacked.png?raw=true",
   "repository": "https://github.com/DerrazSofiane/superset-on-heroku",
@@ -11,6 +15,13 @@
     { "url": "heroku/python" }
   ],
   "env": {
+    "FLASK_APP": {
+      "description": "Flask application name",
+      "value": "superset"
+    },
+    "scripts": {
+      "postdeploy": "./postdeploy.sh"
+    },
     "SECRET_KEY": {
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"

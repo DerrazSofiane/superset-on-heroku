@@ -1,1 +1,1 @@
-web: flask run -p $PORT --with-threads --reload --debugger --host=0.0.0.0
+web: gunicorn -w 10 -k gevent --timeout 120 -b 0.0.0.0:$PORT --limit-request-line 0 --limit-request-field_size 0 superset:app
