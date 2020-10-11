@@ -1,0 +1,8 @@
+pylibmc
+apache-superset
+psycopg2
+werkzeug
+email_validator
+sqlalchemy-vertica
+gunicorn
+gevent
